@@ -2,7 +2,8 @@
   position: relative;
   background-position: center;
   background-size: cover;
-  height: 400px;
+  background-repeat: no-repeat;
+  height: 520px;
 }
 .cover .masking {
   position: absolute;
@@ -22,8 +23,17 @@
   color: white;
 }
 .cover img {
-  width: 400px;
+  width: 450px;
 }
 body {
   background-color: black;
+}
+.Article-heading {
+  color: white;
+  width: 188;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
