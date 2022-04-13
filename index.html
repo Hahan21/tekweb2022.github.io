@@ -13,6 +13,7 @@
     <title>Portofolio</title>
   </head>
   <body>
+    <div id="app">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
       <div class="container">
@@ -39,19 +40,23 @@
       </div>
     </nav>
     <!-- akhir navbar -->
+    
     <!--Header-->
-    <div class="cover" style="background-image: url(images/grungy-cement-wall.jpg)">
+    <div v-if="true" class="cover" style="background-image: url(images/grungy-cement-wall.jpg)">
       <div class="masking"></div>
       <small class="credit"><a href="">Background photo by asierromero</a></small>
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-6 text-white">
-            <h1>Hahan Nulis</h1>
-            <p>Memuat berbagai tulisan yang saya buat dengan sentuhan tangan kasih sayang tulus namun di sia-sia kan.</p>
+        
+              <h1>{{header.title}}</h1>
+            <p>{{header.description}}</p>
+            
+            
             <div class="social">
-              <a href=""><i class="bi-instagram"></i> @hahanrizky</a>
-              <a href=""><i class="bi-github"></i> hahan21</a>
-              <a href=""><i class="bi-youtube"></i> hahanrizky</a>
+              <a v-bind:href="header.social.ig.url"><i class="bi-instagram"></i> {{header.social.ig.title}}</a>
+                <a v-bind:href="header.social.fb.url"><i class="bi-github"></i> {{header.social.github.title}}</a>
+                <a v-bind:href="header.social.yt.url"><i class="bi-youtube"></i> {{header.social.yt.title}}</a>
             </div>
           </div>
           <div class="col-6 align-self-end text-center">
@@ -61,6 +66,8 @@
         </div>
       </div>
     </div>
+  </div>
+
    <br>
     <!--end header-->
     <!--Articles-->
@@ -74,13 +81,14 @@
             <div class="card">
               <img class="card-img-top" src="images/stratocaster.jpeg" />
               <div class="card-body">
-                <h5 class="card-title"><b>6 Lagu Mudah Saat Ngeband</b></h5>
-                <h6 class="card-description"><i>Ditulis oleh : Hahanrizky</i></h6>
-                <p class="card-text">
-                  Hello sobat, bagi sobat yang baru membentuk sebuah band dengan teman-teman sobat, ane ada saran beberapa lagu yang bergenre pop buat sobat bawakan saat ngeband bareng teman-teman band sobat, ada beberapa lagu yang mudah
-                  untuk dibawakan saat ngeband.
-                </p>
-                <a href="#" class="btn btn-primary">Read more</a>
+                <div id="app">
+                  <h5 class="card-title"><b>{{ item.title }}</b></h5>
+                  <p class="card-text">
+                    {{ item.description }}
+                  </p>         
+                  <a href="#" class="btn btn-primary">Read more</a>
+                          
+                </div>
               </div>
             </div>
           </div>
@@ -89,13 +97,14 @@
             <div class="card">
               <img class="card-img-top" src="images/ransomware.jpeg" />
               <div class="card-body">
-                <h5 class="card-title"><b>Terkena Virus Ransomware</b></h5>
-                <h6 class="card-description"><i>Ditulis oleh : Hahanrizky</i></h6>
-                <p class="card-text">
-                  Hello World!! Sedikit bercerita mengenai pengalaman saya kemarin habis terkena serangan hacker dari internet setelah mencoba meng install software bajakan dari website tidak dikenal, hal ini merupakan pengalaman pertama
-                  saya mendapati virus dari internet.
-                </p>
-                <a href="#" class="btn btn-primary">Read more</a>
+                <div id="app">
+                  <h5 class="card-title"><b>{{ item.title }}</b></h5>
+                  <p class="card-text">
+                    {{ item.description }}
+                  </p>         
+                  <a href="#" class="btn btn-primary">Read more</a>
+                          
+                </div>
               </div>
             </div>
           </div>
@@ -104,20 +113,121 @@
             <div class="card">
               <img class="card-img-top" src="images/ukiyo.jpeg" />
               <div class="card-body">
-                <h5 class="card-title"><b>Analisis Proses Bisnis Cafe Ukiyo</b></h5>
-                <h6 class="card-description"><i>Ditulis oleh : Hahanrizky</i></h6>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content Some quick example text to build on the card title and make up the bulk of the card's content Some quick example text to build
-                  on the card title and make up.
-                </p>
-                <a href="#" class="btn btn-primary">Read more</a>
+                <div id="app">
+                  <h5 class="card-title"><b>{{ item.title }}</b></h5>
+                  <p class="card-text">
+                    {{ item.description }}
+                  </p>         
+                  <a href="#" class="btn btn-primary">Read more</a>
+                          
+                </div>
+               
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <br>
+    <br>
     <!--end articles-->
+    <!--skill-->
+    <sections id="Portofolio">
+      <div class="Portofolio-heading">
+        <h1><u>Portofolio</u></h1>
+      </div>
+      <br>
+      <div class="skill-heading">
+        <h2>Daftar Keahlian</h2>
+      </div>
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Ms Word</b></h5>
+               
+                <p class="card-text">
+                  Intermediate 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Ms Excel</b></h5>
+            
+                <p class="card-text">
+                  Intermediate
+                </p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Ms Power point</b></h5>
+      
+                <p class="card-text">
+                  Intermediate
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>My SQL</b></h5>
+               
+                <p class="card-text">
+                  Intermediate
+                </p>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Python</b></h5>
+            
+                <p class="card-text">
+                  Intermediate
+                </p>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Ms Visio</b></h5>
+      
+                <p class="card-text">
+                  Intermediate
+                </p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    
+
+<!--end skill-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -126,6 +236,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./main.js"></script>
 
     <br />
