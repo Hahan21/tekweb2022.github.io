@@ -51,9 +51,9 @@
               <h1>{{header.title}}</h1>
               <p>{{header.description}}</p>
               <div class="social">
-                <a v-bind:href="header.social == undefined ? '':header.social.ig.url"><i class="bi-instagram"></i> {{header.social == undefined ? '':header.social.ig.title}}</a>
-                <a v-bind:href="header.social == undefined ? '':header.social.fb.url"><i class="bi-github"></i> {{header.social == undefined ? '':header.social.fb.title}}</a>
-                <a v-bind:href="header.social == undefined ? '':header.social.yt.url"><i class="bi-youtube"></i> {{header.social == undefined ? '':header.social.yt.title}}</a>
+                <a v-bind:href="header.social.ig.url"><i class="bi-instagram"></i> {{header.social.ig.title}}</a>
+                <a v-bind:href="header.social.fb.url"><i class="bi-github"></i> {{header.social.fb.title}}</a>
+                <a v-bind:href="header.social.yt.url"><i class="bi-youtube"></i> {{header.social.yt.title}}</a>
               </div>
             </div>
             <div class="col-6 align-self-end text-center">
@@ -62,8 +62,13 @@
           </div>
         </div>
       </div>
+      <br>
       <!--end header-->
       <!--Articles-->
+      <sections id="Articles">
+        <div class="Article-heading">
+          <h1><u>Article</u></h1>
+        </div>
       <div class="container pt-3">
         <div class="row">
           <div class="col-md-4" v-for="item in articles">
@@ -99,8 +104,106 @@
         </div>
       </div>
     </div>
-
+    <br>
+    <br>
     <!--end articles-->
+     <!--portofolio-->
+     <sections id="Portofolio">
+      <div class="Portofolio-heading">
+        <h1><u>Portofolio</u></h1>
+      </div>
+      <br>
+      <div class="skill-heading">
+        <h2>Daftar Keahlian</h2>
+      </div>
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Ms Word</b></h5>
+               
+                <p class="card-text">
+                  Intermediate 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Ms Excel</b></h5>
+            
+                <p class="card-text">
+                  Intermediate
+                </p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Ms Power point</b></h5>
+      
+                <p class="card-text">
+                  Intermediate
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>My SQL</b></h5>
+               
+                <p class="card-text">
+                  Intermediate
+                </p>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Python</b></h5>
+            
+                <p class="card-text">
+                  Intermediate
+                </p>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Ms Visio</b></h5>
+      
+                <p class="card-text">
+                  Intermediate
+                </p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <!--end portofolio-->
+   
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
