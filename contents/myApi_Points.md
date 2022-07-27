@@ -17,16 +17,12 @@ GET: /user
 response:
 [
     {
-        "id"            : "",
-        "avatar_url"    : "",
-        "nama"          : "",
-        "desc"          : "",
-        "birthday"      : "",
-        "website"       : "",
-        "phone"         : "",
-        "city"          : "",
-        "age"           : "",
-        "email"         : ""
+        "id"             : "",
+        "nama"           : "",
+        "ig_url"         : "",
+        "github_url"     : "",
+        "yt_url"         : "",
+
     },
     ...
 ]
@@ -41,16 +37,12 @@ GET: /user/[id]
 
 response:
 {
-    "id"            : "",
-    "avatar_url"    : "",
-    "nama"          : "",
-    "desc"          : "",
-    "birthday"      : "",
-    "website"       : "",
-    "phone"         : "",
-    "city"          : "",
-    "age"           : "",
-    "email"         : ""
+        "id"             : "",
+        "nama"           : "",
+        "ig_url"         : "",
+        "github_url"     : "",
+        "yt_url"         : "",
+
 }
 ```
 
@@ -69,15 +61,12 @@ headers:
 
 body:
 {
-    "avatar_url"    : "",
-    "nama"          : "",
-    "desc"          : "",
-    "birthday"      : "",
-    "website"       : "",
-    "phone"         : "",
-    "city"          : "",
-    "age"           : "",
-    "email"         : ""
+        "id"             : "",
+        "nama"           : "",
+        "ig_url"         : "",
+        "github_url"     : "",
+        "yt_url"         : "",
+
 }
 
 response:
@@ -100,16 +89,12 @@ headers:
 
 body:
 {
-    "id"            : "",
-    "avatar_url"    : "",
-    "nama"          : "",
-    "desc"          : "",
-    "birthday"      : "",
-    "website"       : "",
-    "phone"         : "",
-    "city"          : "",
-    "age"           : "",
-    "email"         : ""
+        "id"             : "",
+        "nama"           : "",
+        "ig_url"         : "",
+        "github_url"     : "",
+        "yt_url"         : "",
+
 }
 
 response:
