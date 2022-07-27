@@ -243,16 +243,12 @@ Berikut adalah pola design dari database saya:
 ```mermaid
 classDiagram
     class user{
-        # id: int
-        + avatar_url: string
+        # id: char
         + nama: string
-        + desc: string
-        + birthday: string
-        + website: string
-        + phone: string
-        + city: string
-        + age: string
-        + email: string
+        +i g_url: string
+        + github_url: string
+        + yt_url: string
+
         + getAllUser()
         + getUserById()
         + createUser()
